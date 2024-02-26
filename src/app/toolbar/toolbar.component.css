@@ -1,0 +1,23 @@
+.toolbar {
+    background-color: aqua;
+    height: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 5%;
+}
+
+.search {
+    background-color: chartreuse;
+    height: 50%;
+    width: 25%;
+}
+
+.exit {
+    background-color: crimson;
+    height: 50%;
+    background: silver;
+    aspect-ratio: 1 / 1;
+    margin-right: 1%;
+}

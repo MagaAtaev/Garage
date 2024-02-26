@@ -1,0 +1,20 @@
+<div class="car-list">
+    <div class="flex-container">
+      <div class="car" *ngFor="let car of carlist">
+        <div class="about">
+            <div>
+                {{car.name}}
+            </div>
+
+            <div>
+                {{car.maxSpeed}}
+            </div>
+
+            <div>
+                {{car.price}}
+            </div>
+        </div>
+
+      </div>
+    </div>
+</div>

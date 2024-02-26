@@ -1,27 +1,8 @@
 <div class="main">
-  <div class="toolbar">
-    <div class="search">
+  <app-toolbar></app-toolbar>
 
-    </div>
+  <app-carlist [carlist]="store.carlist" ></app-carlist>
 
-    <div class="exit">
-
-    </div>
-  </div>
-
-  <div class="car-list">
-    <div class="flex-container">
-      <div class="car" *ngFor="let car of carlist">
-
-      </div>
-    </div>
-  </div>
-
-  <div class="footer">
-    <div class="buy">
-
-    </div>
-  </div>
-
+  <app-footer></app-footer>
 
 </div>
