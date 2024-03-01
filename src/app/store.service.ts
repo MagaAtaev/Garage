@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 export interface Car {
   image: string
@@ -11,6 +12,8 @@ export interface Car {
   providedIn: 'root'
 })
 export class StoreService {
+  filterValue = new Subject<string>()
+
   carlist: Car[] = [
     {
       name: "Adder",
@@ -56,7 +59,15 @@ export class StoreService {
 
 ]
 
+  selectedCar: Car | null = null
+
   constructor() { }
 
-  
+  selectCar(car: Car) {
+    this.selectedCar = car
+  }
+
+  setFilter(value: string) {
+    this.filterValue.next(value)
+  }
 }

@@ -1,6 +1,6 @@
 <div class="car-list">
     <div class="flex-container">
-      <div class="car" *ngFor="let car of carlist">
+      <div [class.selected]="isSelected(car)" (click)="clickCar(car)" class="car" *ngFor="let car of carlist">
         <div class="about">
             <div>
                 {{car.name}}
