@@ -9,6 +9,11 @@ import { StoreService } from './store.service';
 export class AppComponent {
   title = 'Garage';
 
-  constructor(public store: StoreService) {}
+  constructor(public store: StoreService) {
+    window.addEventListener("message", event => {
+      console.log(event)
+      
+    })
+  }
   
 }

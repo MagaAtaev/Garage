@@ -64,7 +64,9 @@ export class StoreService {
 
   isVisible = false
 
-  constructor(public nui: NuiService) { }
+  constructor(public nui: NuiService) {
+    this.nuiMessagesListener()
+  }
 
   selectCar(car: Car) {
     this.selectedCar = car
@@ -78,7 +80,7 @@ export class StoreService {
     this.nui.nuiMessage.subscribe(nuiEvent => {
       switch (nuiEvent.act) {
         case "carlistOpen":
-          
+          this.isVisible = nuiEvent.payload.isVisible
           break;
       
         default:
