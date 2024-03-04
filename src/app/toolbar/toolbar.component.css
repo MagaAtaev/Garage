@@ -13,6 +13,7 @@
     border: 4px outset #8a8a8a;
     height: 50%;
     width: 25%;
+    font-size: 2vh;
 }
 
 .exit {
@@ -22,3 +23,4 @@
     aspect-ratio: 1 / 1;
     margin-right: 1%;
 }
+

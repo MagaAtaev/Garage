@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
+import { NuiService } from './nui.service';
 
 export interface Car {
   image: string
@@ -61,7 +62,9 @@ export class StoreService {
 
   selectedCar: Car | null = null
 
-  constructor() { }
+  isVisible = false
+
+  constructor(public nui: NuiService) { }
 
   selectCar(car: Car) {
     this.selectedCar = car
@@ -69,5 +72,18 @@ export class StoreService {
 
   setFilter(value: string) {
     this.filterValue.next(value)
+  }
+
+  private nuiMessagesListener() {
+    this.nui.nuiMessage.subscribe(nuiEvent => {
+      switch (nuiEvent.act) {
+        case "carlistOpen":
+          
+          break;
+      
+        default:
+          break;
+      }
+    })
   }
 }
