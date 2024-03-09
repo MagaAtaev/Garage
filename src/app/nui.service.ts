@@ -8,6 +8,11 @@ interface NuiMessage {
   payload: any
 }
 
+interface NuiResponse {
+  code: number
+  data: any
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -21,5 +26,19 @@ export class NuiService {
       console.log(event)
       this.nuiMessage.next(event.data)
     })
+  }
+
+  getCarlist() {
+    const j = {
+      act: "getCarlist"
+    }
+    return this.http.post<NuiResponse>(this.url + "carshop", j)
+  }
+
+  closeCarshop() {
+    const j = {
+      act: "closeCarshop"
+    }
+    return this.http.post<NuiResponse>(this.url + "carshop", j)
   }
 }

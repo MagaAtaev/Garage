@@ -14,4 +14,8 @@ export class ToolbarComponent {
     this.store.setFilter(event.target.value)
     console.log(event.target.value)
   }
+
+  closeCarshop() {
+    this.store.closeCarshop().catch((reason) => console.log(reason))
+  }
 }

@@ -15,7 +15,7 @@
     background-color: rgba(240, 240, 240, 0.527);
     height: 15%;
     width: 16%;
-    background-image: url("/assets/ignus.webp");
+    background-image: url("~src/assets/ignus.webp");
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: 5%;

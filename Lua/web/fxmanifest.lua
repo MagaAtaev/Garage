@@ -13,4 +13,6 @@ files {
     'web/index.html',
     'web/*.js',
     'web/*.css',
+    'web/assets/*.webp',
+    'web/*.webp'
 }
