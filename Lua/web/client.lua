@@ -60,5 +60,13 @@ RegisterNUICallback("carshop", function (data, cb)
     elseif data.act == "closeCarshop" then
         SetNuiFocus(false, false)
         cb({code = 200})
+    elseif data.act == "buyCar" then
+      if (data.payload and data.payload.carName) then
+          print(data.payload.carName)
+          cb({code = 200})
+      else
+          print('Нет данных')
+          cb({code = 400, error = "Вы не прислали название машины"})
+      end
     end
 end)

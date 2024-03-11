@@ -1,8 +1,8 @@
 <div class="footer">
-    <div class="buy">
+    <div (click)="buy()" class="buy">
         <ng-container *ngIf="store.selectedCar; else unset">{{store.selectedCar.name}}: {{store.selectedCar.price}}$</ng-container>
         <ng-template #unset>  
             Выберите машину
-          </ng-template>
+        </ng-template>
     </div>
 </div>

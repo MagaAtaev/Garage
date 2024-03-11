@@ -41,4 +41,15 @@ export class NuiService {
     }
     return this.http.post<NuiResponse>(this.url + "carshop", j)
   }
+
+  buyCar(name: string) {
+    const j = {
+      act: "buyCar",
+      payload: {
+        carName: name
+      }
+    }
+    return this.http.post<NuiResponse>(this.url + "carshop", j)
+  }
 }
+
