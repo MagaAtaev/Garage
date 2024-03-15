@@ -1,20 +1,32 @@
-<div class="car-list">
-    <div class="flex-container">
-      <div [class.selected]="isSelected(car)" (click)="clickCar(car)" class="car" *ngFor="let car of carlist">
+<div class="flex-container">
+    <div [class.selected]="isSelected(car)" (click)="clickCar(car)" class="car" *ngFor="let car of carlist">
+        <img
+            src="./assets/ui_auto.png"
+        />
+
         <div class="about">
-            <div>
+            <div class="car-name">
                 {{car.name}}
             </div>
 
-            <div>
-                {{car.maxSpeed}}
+            <div class="car-properties">
+                <div>
+                    {{car.maxSpeed}}
+                </div>
+
+                <div>
+                    {{car.seats}}
+                </div>
+
+                <div>
+                    {{car.trunkWeight}}
+                </div>
             </div>
 
-            <div>
+            <div class="car-price">
                 {{car.price}}
             </div>
         </div>
-
-      </div>
     </div>
 </div>
+

@@ -1,5 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background-image: url(https://preview.redd.it/nduksi52zrs41.jpg?auto=webp&s=0760039b9b3ebdb699ef6569ee313b787f27375c);
+}
 
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+/** {
+  scrollbar-width: thin;
+  scrollbar-color: #9E9E9E #4B4F4F;
+}*/
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    height: 7px;
+    width: 7px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background-color: #252323;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #252323;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #252323;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #3F3F3F;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #3F3F3F;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #3F3F3F;
+  }
+  

@@ -8,6 +8,8 @@ export interface Car {
   name: string
   maxSpeed: number
   price: number
+  trunkWeight: number
+  seats: number
 }
 
 @Injectable({
