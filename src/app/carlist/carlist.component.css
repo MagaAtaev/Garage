@@ -1,16 +1,18 @@
 :host {
-    height: 85%;
+    height: 92%;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: flex-start;
 }
 
 .car {
+    display: flex;
+    flex-direction: column;
     background-color: rgba(29, 29, 29, 0.301);
-    height: 66%;
+    height: 60%;
     width: 32%;
     padding: 1vw;
     box-sizing: border-box;
@@ -28,9 +30,11 @@ img {
     align-content: flex-start;
     column-gap: 1vw;
     row-gap: 1vw;
-    width: 95%;
+    width: 100%;
     height: 100%;
     overflow-y: scroll;
+    padding-right: 2%;
+    margin-right: 3%;
 }
 
 .about {
@@ -38,10 +42,10 @@ img {
     font-size: 1.5vh;
     line-height: 1.55vh;
     display: flex;
-    height: 60%;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 1vh;
+    padding-top: 2vh;
 }
 
 .car:hover {
@@ -55,9 +59,28 @@ img {
 .car-properties {
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
+    border-top: 2px solid rgb(117, 112, 112);
+    border-bottom: 2px solid rgb(117, 112, 112);
+    font-size: 2vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+}
+
+.car-properties > div {
+    display: flex;
+    align-items: center;
 }
 
 .car-name {
     font-size: 2.5vh;
+}
+
+.properties-ed {
+    color: rgb(117, 112, 112);
+}
+
+.car-price {
+    font-size: 2.5vh;
+    text-align: right;
 }

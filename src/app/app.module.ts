@@ -8,6 +8,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { CarlistComponent } from './carlist/carlist.component';
 import { FooterComponent } from './footer/footer.component';
 
+import {MatIconModule} from '@angular/material/icon';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,20 +11,27 @@
 
             <div class="car-properties">
                 <div>
-                    {{car.maxSpeed}}
+                    {{car.maxSpeed}}&nbsp;
+                    <span class="properties-ed">
+                        км/ч
+                    </span>
                 </div>
 
                 <div>
-                    {{car.seats}}
+                    {{car.seats}}&nbsp;
+                    <mat-icon class="properties-ed" fontIcon="person"></mat-icon>
                 </div>
 
                 <div>
-                    {{car.trunkWeight}}
+                    {{car.trunkWeight}}&nbsp;
+                    <span class="properties-ed">
+                        кг
+                    </span>
                 </div>
             </div>
 
             <div class="car-price">
-                {{car.price}}
+                {{car.price | number}} $
             </div>
         </div>
     </div>

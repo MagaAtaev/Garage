@@ -5,7 +5,7 @@ export const testMode = environment.testMode;
 
 export const carlist: Car[] = [
     {
-        name: "Adder",
+        name: "Brovado Gauntlet Classic",
         image: "https://docs.fivem.net/vehicles/adder.webp",
         maxSpeed: 300,
         price: 1200000,

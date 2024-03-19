@@ -1,21 +1,29 @@
 :host {
-    height: 7%;
+    background-color: rgb(58, 58, 58);
+    height: 15%;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    
+    --mask: conic-gradient(from -45deg at bottom,#39e047,#c52424 1deg 90deg,#00000000 91deg) 50% / 60px 100%;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
 }
 
 .buy {
     display: flex;
     background: rgb(35, 104, 58);
     height: 50%;
-    width: 15%;
+    width: 90%;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 1.5vh;
     font-weight: bold;
     color: aliceblue;
+    
 }
+
