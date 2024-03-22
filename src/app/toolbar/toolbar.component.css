@@ -1,5 +1,5 @@
 :host {
-    height: 8%;
+    height: 16%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -8,12 +8,31 @@
 }
 
 .search {
-    background-color: rgb(175, 175, 175);
-    border: 4px outset #8a8a8a;
-    height: 50%;
-    width: 35%;
+    display: flex;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #4e4e4ecb;
+    height: 35%;
+    width: 45%;
     font-size: 2vh;
+    color: white;
+    align-items: center;
 }
+
+.search > input {
+    height: 100%;
+    width: 90%;
+    border: 0;
+    background: transparent;
+    outline: 0;
+    font-size: 2vh;
+    color: white;
+}
+
+.search > input:focus {
+    outline: 0
+}
+
 
 .exit {
     height: 100%;

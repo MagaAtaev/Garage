@@ -1,5 +1,5 @@
 :host {
-    height: 92%;
+    height: 84%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -49,11 +49,11 @@ img {
 }
 
 .car:hover {
-    background-color: rgba(160, 255, 136, 0.527);
+    background-color: rgba(67, 129, 55, 0.53);
 }
 
 .selected {
-    background-color: rgba(113, 255, 78, 0.527);
+    background-color: rgb(43 83 36 / 53%)
 }
 
 .car-properties {

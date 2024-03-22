@@ -2,7 +2,12 @@
     PREMIUM DELUXE MOTORSPORT
 </div>
 
-<input class="search" (keyup)="applyFilter($event)" />
+<div class="search">
+    <span><mat-icon fontIcon="search"></mat-icon>&nbsp;</span>
+    <input (keyup)="applyFilter($event)" />
+</div>
+
+
 
 
 <div (click)="closeCarshop()" class="exit">

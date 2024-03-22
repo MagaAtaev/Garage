@@ -1,5 +1,5 @@
 .main {
-    background-color: rgba(37, 37, 37, 0.918);
+    background-color:  rgba(37, 37, 37, 0.918);
     height: 80vh;
     width: 80vw;
     position: absolute;
@@ -8,7 +8,7 @@
     transform: translate(-50%, -50%)
 }
 
-.category {
+.menu {
     display: inline-flex;
     vertical-align: top;
     height: 100%;
@@ -16,6 +16,37 @@
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+}
+
+.category {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    flex-grow: 1;
+    margin-top: 45px;
+}
+
+.category > div {
+    color: aliceblue;
+    display: flex;
+    height: 10%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+    border-bottom: 2px solid #4e4e4ecb;
+}
+
+.category > div:hover {
+    background-color: rgba(122, 122, 122, 0.842);
 }
 
 .dashboard {
@@ -23,4 +54,17 @@
     vertical-align: top;
     height: 100%;
     width: 85%;
+}
+
+.logo {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 15%;
+    padding-left: 26px;
+    padding-right: 26px;
+
+}
+
+.logo > img {
+    width: 100%;
 }

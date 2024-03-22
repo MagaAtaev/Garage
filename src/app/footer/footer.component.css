@@ -1,29 +1,58 @@
 :host {
-    background-color: rgb(58, 58, 58);
-    height: 15%;
+    height: 35%;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    
-    --mask: conic-gradient(from -45deg at bottom,#39e047,#c52424 1deg 90deg,#00000000 91deg) 50% / 60px 100%;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
 }
 
 .buy {
     display: flex;
     background: rgb(35, 104, 58);
-    height: 50%;
-    width: 90%;
+    height: 15%;
+    width: 80%;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 1.5vh;
     font-weight: bold;
     color: aliceblue;
-    
 }
 
+.cash-receipt {
+    background-color: rgb(58, 58, 58);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+
+    --mask: conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/27px 100%;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+}
+
+.car-on-cash {
+    color: rgb(185, 185, 185);
+    display: flex;
+    height: 55%;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5vh;
+}
+
+.carName {
+    border-bottom: 2px solid rgb(117, 112, 112);
+    width: 90%;
+}
+
+.carPrice {
+    border-bottom: 2px solid rgb(117, 112, 112);
+    width: 90%;
+}
