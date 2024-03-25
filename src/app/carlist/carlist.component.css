@@ -50,6 +50,7 @@ img {
 
 .car:hover {
     background-color: rgba(67, 129, 55, 0.53);
+    cursor: pointer;
 }
 
 .selected {

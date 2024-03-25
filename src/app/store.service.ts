@@ -22,6 +22,8 @@ export class StoreService {
 
   selectedCar: Car | null = null;
 
+  selectedCategoryName: string | null = null
+
   isVisible = true;
 
   constructor(public nui: NuiService) {
@@ -80,5 +82,9 @@ export class StoreService {
         }
       })
     })
+  }
+  
+  selectCategory(category: string) {
+    this.selectedCategoryName = category
   }
 }

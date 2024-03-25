@@ -5,17 +5,9 @@
     </div>
 
     <div class="category">
-        <div>
-            Дешевые
-        </div>
-    
-        <div>
-            Средние
-        </div>
-
-        <div>
-            Дорогие
-        </div>
+      <div [class.selected]="isSelected(category)" (click)="clickCategory(category)" *ngFor="let category of categoryList">
+        {{category}}
+      </div>
     </div>
 
     <div></div>

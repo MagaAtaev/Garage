@@ -9,11 +9,20 @@ import { StoreService } from './store.service';
 export class AppComponent {
   title = 'Garage';
 
+  categoryList = ["Дешевые", "Средние", "Дорогие"]
+
   constructor(public store: StoreService) {
     window.addEventListener("message", event => {
       console.log(event)
       
     })
   }
+
+  clickCategory(category: string) {
+    this.store.selectCategory(category)
+  }
   
+  isSelected(category: string) {
+    return this.store.selectedCategoryName === category
+  }
 }

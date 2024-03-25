@@ -21,6 +21,10 @@
     color: aliceblue;
 }
 
+.buy:hover {
+    cursor: pointer;
+}
+
 .cash-receipt {
     background-color: rgb(58, 58, 58);
     display: flex;

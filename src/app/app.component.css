@@ -47,6 +47,7 @@
 
 .category > div:hover {
     background-color: rgba(122, 122, 122, 0.842);
+    cursor: pointer;
 }
 
 .dashboard {
@@ -67,4 +68,8 @@
 
 .logo > img {
     width: 100%;
+}
+
+.selected {
+    background-color: rgba(78, 78, 78, 0.774);
 }
